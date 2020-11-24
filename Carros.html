@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="css/bulma-0.9.0/css/bulma-rtl.min.css"/>
+    <link rel="stylesheet" href="css/bulma-0.9.0/css/bulma.min.css"/>
+    <style type="text/css">       
+         .logo {
+          max-width: 350px;
+          max-height: 160px;
+         }
+    </style>
+</head>
+<body>
+    <section class="hero is-primary is-medium is-bold has-background-black is-narrow">            
+        <nav class="navbar has-background-black scroll" role="navigation" aria-label="main navigation">
+          <div class="navbar-brand">
+            <a class="navbar-brand">
+              <img class="logo" src="img/logo.jpg" width="112" height="28">
+            </a>
+        
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
+        
+          <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-start">
+              
+              <a class="navbar-item navbar-end" href="Inicio.html">Inicio</a>
+              <a class="navbar-item navbar-end" href="#serv">Serviços</a>
+              <a class="navbar-item navbar-end" href="#sobre">Sobre nós</a>
+              <a class="navbar-item navbar-end" href="Carros.html">Carros</a> 
+              <a class="navbar-item navbar-end" href="#">Login</a>     
+              <div class="navbar-item navbar-end ">
+                <a href="Contact.html"><!--type="submit"-->
+                  <button class="button has-background-black has-text-white is-active">Contato</button>  
+                </a>     
+              </div>   
+            </div>
+          </div>
+        </nav>
+         <!--inicio -->
+         <div class="hero-body has-background-black">
+            <div class="columns">
+              <div class="column is-3 has-background-black">                
+                <aside class="menu">
+                  <p class="menu-label has-text-white">
+                    Marca do carro
+                  </p>
+                  <div class="field has-addons">
+                    <div class="control is-expanded">
+                      <div class="select is-fullwidth">
+                        <select name="country">
+                          <option value="#">Audi</option>
+                          <option value="#">BMW</option>
+                          <option value="#">CAOA Chery</option>
+                          <option value="#">Chevrolet</option>
+                          <option value="#">Citroën</option>
+                          <option value="#">Dodge</option>
+                          <option value="#">Effa</option>
+                          <option value="#">Ferrari</option>
+                          <option value="#">Fiat</option>
+                          <option value="#">Ford</option>
+                          <option value="#">Foton</option>
+                          <option value="#">Honda</option>
+                          <option value="#">Hyundai</option>
+                          <option value="#">Iveco</option>
+                          <option value="#">JAC</option>
+                          <option value="#">Jaguar</option>
+                          <option value="#">Jeep</option>
+                          <option value="#">Kia</option>
+                          <option value="#">Lamborghini</option>
+                          <option value="#">Land Rover</option>
+                          <option value="#">Lexus</option>
+                          <option value="#">Maserati</option>
+                          <option value="#">Mercedes-Benz</option>
+                          <option value="#">Mitsubishi</option>
+                          <option value="#">Nissan</option>
+                          <option value="#">Peugeot</option>
+                          <option value="#">Porsche</option>
+                          <option value="#">Renault</option>
+                          <option value="#">Rolls-Royce</option>
+                          <option value="#">Subaru</option>
+                          <option value="#">Suzuki</option>
+                          <option value="#">Toyota</option>
+                          <option value="#">Troller</option>
+                          <option value="#">Volkswagen</option>
+                          <option value="#">Volvo</option>                          
+                        </select>
+                      </div>
+                    </div>
+                    <div class="control">
+                      <button type="submit" class="button is-dark">Pesquisar</button>
+                    </div>
+                  </div>
+                  <p class="menu-label has-text-white">
+                   Ano
+                  </p>
+                  <div class="field is-horizontal">                    
+                    <div class="field-body">
+                      <div class="field">
+                        <p class="control is-expanded">
+                          <input class="input is-dark is-small" type="text" placeholder="De">                    
+                        </p>
+                      </div>
+                      <div class="field">
+                        <p class="control is-expanded">
+                          <input class="input is-dark is-small" type="text" placeholder="Até">                        
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="menu-label has-text-white">
+                    Preço
+                  </p>
+                  <div class="field is-horizontal">                    
+                    <div class="field-body">
+                      <div class="field">
+                        <p class="control is-expanded">
+                          <input class="input is-dark is-small" type="text" placeholder="De">                    
+                        </p>
+                      </div>
+                      <div class="field">
+                        <p class="control is-expanded">
+                          <input class="input is-dark is-small" type="text" placeholder="Até">                        
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="menu-label has-text-white">
+                    Categoria
+                  </p>
+                  <ul class="menu-list">
+                    <li>
+                      <label class="checkbox">
+                      <input type="checkbox">Altomáticos
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox">Hatches
+                      </label>
+                    </li>     
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox">Sedans
+                      </label>
+                    </li>               
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox">Caminhonetes
+                      </label> 
+                    </li>                  
+                  </ul>
+                  <p class="menu-label has-text-white">
+                    Cores
+                  </p>
+                  <ul class="menu-list">
+                    <li>
+                      <label class="checkbox">
+                      <input type="checkbox">Amarelo
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox">Azul
+                      </label>
+                    </li>     
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox">Branco
+                      </label>
+                    </li>               
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox">Cinza
+                      </label> 
+                    </li>
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox">Indefinida
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox">Laranja
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox">Marrom
+                      </label> 
+                    </li>
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox">Prata
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox">Preto
+                      </label>
+                    </li>
+                    <li>
+                      <label class="checkbox">
+                        <input type="checkbox">Vermelho
+                      </label>
+                    </li>            
+                  </ul>
+                  <p class="menu-label has-text-white">
+                    Opcionais
+                  </p>
+                  <ul class="menu-list">          
+                  <li>
+                    <label class="checkbox">
+                      <input type="checkbox">Airbag 
+                      </label>
+                  </li>
+                  <li>
+                    <label class="checkbox">
+                      <input type="checkbox">Alarme
+                      </label>
+                  </li>
+                  <li>
+                    <label class="checkbox">
+                      <input type="checkbox">Ar-condicionado
+                      </label>
+                  </li>                  
+                  <li>
+                    <label class="checkbox">
+                      <input type="checkbox"> Direção hidráulica
+                      </label>
+                  </li>
+                  <li>
+                    <label class="checkbox">
+                      <input type="checkbox">Freios ABS
+                    </label>
+                  </li>                        
+                  <li>
+                    <label class="checkbox">
+                      <input type="checkbox">GPS
+                      </label>
+                  </li>
+                  <li>
+                    <label class="checkbox">
+                    <input type="checkbox">Trava elétrica
+                    </label>
+                  </li>
+                  <li>
+                    <label class="checkbox">
+                    <input type="checkbox">Teto solar
+                    </label>
+                  </li>
+                  <li>
+                    <label class="checkbox menu-list">
+                      <input type="checkbox">Vidro eletrico
+                    </label>
+                  </li>                  
+                  </ul>
+                  <p class="menu-label has-text-white">
+                    Carroceria
+                  </p>
+                  <ul class="menu-list"> 
+                    <li>
+                      <label class="checkbox menu-list">
+                        <input type="checkbox">Conversível
+                      </label>
+                    </li> 
+                    <li>
+                      <label class="checkbox menu-list">
+                        <input type="checkbox">Cupê
+                      </label>
+                    </li>  
+                    <li>
+                      <label class="checkbox menu-list">
+                        <input type="checkbox"> Hatchback
+                      </label>
+                    </li> 
+                    <li>
+                      <label class="checkbox menu-list">
+                        <input type="checkbox">Minivan
+                      </label>
+                    </li> 
+                    <li>
+                      <label class="checkbox menu-list">
+                        <input type="checkbox">Sedã
+                      </label>
+                    </li> 
+                    <li>
+                      <label class="checkbox menu-list">
+                        <input type="checkbox"> Utilitário esportivo
+                      </label>
+                    </li> 
+                  </ul>
+                  <p class="menu-label has-text-white">
+                    Cambio
+                  </p>
+                  <ul class="menu-list">
+                    <li>
+                      <label class="checkbox menu-list">
+                        <input type="checkbox">Automático
+                      </label>
+                    </li> 
+                    <li>
+                      <label class="checkbox menu-list">
+                        <input type="checkbox">Automatizado
+                      </label>
+                    </li> 
+                    <li>
+                      <label class="checkbox menu-list">
+                        <input type="checkbox">Automatizado DCT
+                      </label>
+                    </li> 
+                    <li>
+                      <label class="checkbox menu-list">
+                        <input type="checkbox">Manual
+                      </label>
+                    </li>                     
+                  </ul>                  
+                  <br>  
+                  <button type="submit" class="button is-medium is-fullwidth is-dark">Limpar filtros</button>              
+                </aside>                
+              </div>
+              <div class="column is-small"></div>
+              <div class="columns is-multiline rows">
+                <div class="column is-9-mobile is-5-tablet is-5-desktop">
+                  <div class="card is-shadowless is-slightly-rounded">
+                    <div class="card-image">
+                      <figure class="image">
+                        <a href="#">
+                          <img src="img/CARRO PNG.jpg" alt="#" class="is-slightly-rounded">
+                        </a>
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="content">
+                        <p>
+                          <span class="title is-4 is-capitalized">
+                          <a href="#" class="has-text-black is">CARRO</a>
+                          <a class="has-text-black">R$</a>
+                          </span><br><span class="m-t-tiny block">TIPO</span>
+                        </p> 
+                        <p class="venue-data-sm">
+                          Descrição
+                        </p>
+                        <a  href="showroom.html">
+                          <button class="button is-dark is-left">Comprar</button>
+                        </a>                        
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+                <div class="column is-9-mobile is-5-tablet is-5-desktop">
+                  <div class="card is-shadowless is-slightly-rounded">
+                    <div class="card-image">
+                      <figure class="image">
+                        <a href="#">
+                          <img src="img/CARRO PNG.jpg" alt="#" class="is-slightly-rounded">
+                        </a>
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="content">
+                        <p>
+                          <span class="title is-4 is-capitalized">
+                          <a href="#" class="has-text-black">CARRO</a>
+                          <a class="has-text-black">R$</a>
+                          </span><br><span class="m-t-tiny block">TIPO</span>
+                        </p> 
+                        <p class="venue-data-sm">
+                          Descrição
+                        </p>
+                        <a  href="showroom.html">
+                          <button class="button is-dark is-left">Comprar</button>
+                        </a>      
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+                <div class="column is-9-mobile is-5-tablet is-5-desktop">
+                  <div class="card is-shadowless is-slightly-rounded">
+                    <div class="card-image">
+                      <figure class="image">
+                        <a href="#">
+                          <img src="img/CARRO PNG.jpg" alt="#" class="is-slightly-rounded">
+                        </a>
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="content">
+                        <p>
+                          <span class="title is-4 is-capitalized">
+                          <a href="#" class="has-text-black">CARRO</a>
+                          <a class="has-text-black">R$</a>
+                          </span><br><span class="m-t-tiny block">TIPO</span>
+                        </p> 
+                        <p class="venue-data-sm">
+                          Descrição
+                        </p>
+                        <a  href="showroom.html">
+                          <button class="button is-dark is-left">Comprar</button>
+                        </a>      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="column is-9-mobile is-5-tablet is-5-desktop">
+                  <div class="card is-shadowless is-slightly-rounded">
+                    <div class="card-image">
+                      <figure class="image">
+                        <a href="#">
+                          <img src="img/CARRO PNG.jpg" alt="#" class="is-slightly-rounded">
+                        </a>
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="content">
+                        <p>
+                          <span class="title is-4 is-capitalized">
+                          <a href="#" class="has-text-black">CARRO</a>
+                          <a class="has-text-black">R$</a>
+                          </span><br><span class="m-t-tiny block">TIPO</span>
+                        </p> 
+                        <p class="venue-data-sm">
+                          Descrição
+                        </p>
+                        <a  href="showroom.html">
+                          <button class="button is-dark is-left">Comprar</button>
+                        </a>      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="column is-9-mobile is-5-tablet is-5-desktop">
+                  <div class="card is-shadowless is-slightly-rounded">
+                    <div class="card-image">
+                      <figure class="image">
+                        <a href="#">
+                          <img src="img/CARRO PNG.jpg" alt="#" class="is-slightly-rounded">
+                        </a>
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="content">
+                        <p>
+                          <span class="title is-4 is-capitalized">
+                          <a href="#" class="has-text-black">CARRO</a>
+                          <a class="has-text-black">R$</a>
+                          </span><br><span class="m-t-tiny block">TIPO</span>
+                        </p> 
+                        <p class="venue-data-sm">
+                          Descrição
+                        </p>
+                        <a  href="showroom.html">
+                          <button class="button is-dark is-left">Comprar</button>
+                        </a>      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="column is-9-mobile is-5-tablet is-5-desktop">
+                  <div class="card is-shadowless is-slightly-rounded">
+                    <div class="card-image">
+                      <figure class="image">
+                        <a href="#">
+                          <img src="img/CARRO PNG.jpg" alt="#" class="is-slightly-rounded">
+                        </a>
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="content">
+                        <p>
+                          <span class="title is-4 is-capitalized">
+                          <a href="#" class="has-text-black">CARRO</a>
+                          <a class="has-text-black">R$</a>
+                          </span><br><span class="m-t-tiny block">TIPO</span>
+                        </p> 
+                        <p class="venue-data-sm">
+                          Descrição
+                        </p>
+                        <a  href="showroom.html">
+                          <button class="button is-dark is-left">Comprar</button>
+                        </a>      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="column is-9-mobile is-5-tablet is-5-desktop">
+                  <div class="card is-shadowless is-slightly-rounded">
+                    <div class="card-image">
+                      <figure class="image">
+                        <a href="#">
+                          <img src="img/CARRO PNG.jpg" alt="#" class="is-slightly-rounded">
+                        </a>
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="content">
+                        <p>
+                          <span class="title is-4 is-capitalized">
+                          <a href="#" class="has-text-black">CARRO</a>
+                          <a class="has-text-black">R$</a>
+                          </span><br><span class="m-t-tiny block">TIPO</span>
+                        </p> 
+                        <p class="venue-data-sm">
+                          Descrição
+                        </p>
+                        <a  href="showroom.html">
+                          <button class="button is-dark is-left">Comprar</button>
+                        </a>      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="column is-9-mobile is-5-tablet is-5-desktop">
+                  <div class="card is-shadowless is-slightly-rounded">
+                    <div class="card-image">
+                      <figure class="image">
+                        <a href="#">
+                          <img src="img/CARRO PNG.jpg" alt="#" class="is-slightly-rounded">
+                        </a>
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="content">
+                        <p>
+                          <span class="title is-4 is-capitalized">
+                          <a href="#" class="has-text-black">CARRO</a>
+                          <a class="has-text-black">R$</a>
+                          </span><br><span class="m-t-tiny block">TIPO</span>
+                        </p> 
+                        <p class="venue-data-sm">
+                          Descrição
+                        </p>
+                        <a  href="showroom.html">
+                          <button class="button is-dark is-left">Comprar</button>
+                        </a>      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="column is-9-mobile is-5-tablet is-5-desktop">
+                  <div class="card is-shadowless is-slightly-rounded">
+                    <div class="card-image">
+                      <figure class="image">
+                        <a href="#">
+                          <img src="img/CARRO PNG.jpg" alt="#" class="is-slightly-rounded">
+                        </a>
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="content">
+                        <p>
+                          <span class="title is-4 is-capitalized">
+                          <a href="#" class="has-text-black">CARRO</a>
+                          <a class="has-text-black">R$</a>
+                          </span><br><span class="m-t-tiny block">TIPO</span>
+                        </p> 
+                        <p class="venue-data-sm">
+                          Descrição
+                        </p>
+                        <a  href="showroom.html">
+                          <button class="button is-dark is-left">Comprar</button>
+                        </a>      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="column is-9-mobile is-5-tablet is-5-desktop">
+                  <div class="card is-shadowless is-slightly-rounded">
+                    <div class="card-image">
+                      <figure class="image">
+                        <a href="#">
+                          <img src="img/CARRO PNG.jpg" alt="#" class="is-slightly-rounded">
+                        </a>
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="content">
+                        <p>
+                          <span class="title is-4 is-capitalized">
+                          <a href="#" class="has-text-black">CARRO</a>
+                          <a class="has-text-black">R$</a>
+                          </span><br><span class="m-t-tiny block">TIPO</span>
+                        </p> 
+                        <p class="venue-data-sm">
+                          Descrição
+                        </p>
+                        <a  href="showroom.html">
+                          <button class="button is-dark is-left">Comprar</button>
+                        </a>      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="column is-9-mobile is-5-tablet is-5-desktop">
+                  <div class="card is-shadowless is-slightly-rounded">
+                    <div class="card-image">
+                      <figure class="image">
+                        <a href="#">
+                          <img src="img/CARRO PNG.jpg" alt="#" class="is-slightly-rounded">
+                        </a>
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="content">
+                        <p>
+                          <span class="title is-4 is-capitalized">
+                          <a href="#" class="has-text-black">CARRO</a>
+                          <a class="has-text-black">R$</a>
+                          </span><br><span class="m-t-tiny block">TIPO</span>
+                        </p> 
+                        <p class="venue-data-sm">
+                          Descrição
+                        </p>
+                        <a  href="showroom.html">
+                          <button class="button is-dark is-left">Comprar</button>
+                        </a>      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="column is-9-mobile is-5-tablet is-5-desktop">
+                  <div class="card is-shadowless is-slightly-rounded">
+                    <div class="card-image">
+                      <figure class="image">
+                        <a href="#">
+                          <img src="img/CARRO PNG.jpg" alt="#" class="is-slightly-rounded">
+                        </a>
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="content">
+                        <p>
+                          <span class="title is-4 is-capitalized">
+                          <a href="#" class="has-text-black">CARRO</a>
+                          <a class="has-text-black">R$</a>
+                          </span><br><span class="m-t-tiny block">TIPO</span>
+                        </p> 
+                        <p class="venue-data-sm">
+                          Descrição
+                        </p>
+                        <a  href="showroom.html">
+                          <button class="button is-dark is-left">Comprar</button>
+                        </a>      
+                      </div>
+                    </div>
+                  </div>
+                </div>              
+              </div>
+            </div>         
+          </div>
+    </section>        
+    <section class="hero is-primary is-medium is-bold has-background-black is-narrow">
+      <div class="has-background-black">
+        <section class="hero-body container">              
+          <footer class="footer has-background-black card-footer">
+            <div class="columns">
+                <div class="column is-3">
+                    <p class="bd-footer-link-title">
+                        <a class="subtitle" href="#">Serviços</a>
+                    </p>
+                    <p class="bd-footer-link">
+                        <a class="has-text-white" href="#">
+                          Suporte ao cliente
+                        </a>
+                    </p>
+                    <p class="bd-footer-link">
+                        <a class="has-text-white" href="#">
+                          Atendimento 24H
+                        </a>
+                    </p>  
+                    <p class="bd-footer-link">
+                        <a class="has-text-white" href="#">
+                          Serviço
+                        </a>
+                    </p>      
+                </div>
+                <div class="column is-3">
+                    <p class="bd-footer-link-title">
+                        <a class="subtitle" href="#">Carros</a>
+                    </p>
+                    <p class="bd-footer-link">
+                        <a class="has-text-white" href="#">
+                          Carros Baratos
+                        </a>
+                    </p>
+                    <p class="bd-footer-link">
+                        <a class="has-text-white" href="#">
+                          Carros do Ano
+                        </a>
+                    </p>
+                    <p class="bd-footer-link">
+                        <a class="has-text-white" href="#">
+                          Custo Beneficio 
+                        </a>
+                    </p>    
+                    <p class="bd-footer-link">
+                        <a class="has-text-white" href="#">
+                          Carros Esportivos
+                        </a>
+                    </p>
+                    <p class="bd-footer-link">
+                        <a class="has-text-white" href="#">
+                          Caminhonetes
+                        </a>
+                    </p>
+                    <p class="bd-footer-link">
+                        <a class="has-text-white" href="#">
+                          Sedans
+                        </a>
+                    </p>
+                    <p class="bd-footer-link">
+                        <a class="has-text-white" href="#">
+                          Hatch 
+                        </a>
+                    </p> 
+                </div>
+                <div class="column is-3">
+                    <p class="bd-footer-link-title">
+                        <a class="subtitle" href="#">Negociar</a>
+                    </p>
+                    <p class="bd-footer-link">
+                        <a class="has-text-white" href="#">
+                          Negociar
+                        </a>
+                    </p>    
+                </div>
+                <div class="column is-3">
+                    <p class="bd-footer-link-title">
+                        <a class="subtitle" href="#">Contato</a>
+                    </p>
+                    <p class="bd-footer-link">
+                        <a class="has-text-white" href="#">
+                          Entrar em Contato
+                        </a>
+                    </p>    
+                </div>
+                <div class="column is-3">
+                    <p class="bd-footer-link-title">
+                        <a class="subtitle" href="#">Ajuda</a>
+                    </p>
+                    <p class="bd-footer-link">
+                        <a class="has-text-white" href="#">
+                          Como Negociar
+                        </a>
+                    </p>  
+                    <p class="bd-footer-link">
+                        <a class="has-text-white" href="#">
+                          Como entrar em contato
+                        </a>
+                    </p>   
+                    <p class="bd-footer-link">
+                        <a class="has-text-white" href="#">
+                          Sobre-nós
+                        </a>
+                    </p>     
+                    <p class="bd-footer-link">
+                        <a class="has-text-white" href="#">
+                          Politica de privacidade
+                        </a>
+                    </p>      
+                </div>
+            </div>                        
+        </footer>        
+        </section>
+      </div>
+    </section>         
+</body>
+</html>
